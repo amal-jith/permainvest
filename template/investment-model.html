@@ -560,7 +560,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card capital-card-1">
+                    <div class="card capital-card-1" data-bs-toggle="tab" data-bs-target="#how-we-create-value" role="tab">
                       <div class="card-body p-0 d-flex align-items-center">
                         <div class="icon-circle-1 me-4">
                           <img src="{% static 'icons/6Frame.svg' %}" alt="icon">
@@ -570,7 +570,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card capital-card-1">
+                    <div class="card capital-card-1" data-bs-toggle="tab" data-bs-target="#what-we-avoid" role="tab">
                       <div class="card-body p-0 d-flex align-items-center">
                         <div class="icon-circle-1 me-4">
                           <img src="{% static 'icons/7Frame.svg' %}" alt="icon">
@@ -580,7 +580,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card capital-card-1">
+                    <div class="card capital-card-1" data-bs-toggle="tab" data-bs-target="#our-edge" role="tab">
                       <div class="card-body p-0 d-flex align-items-center">
                         <div class="icon-circle-1 me-4">
                           <img src="{% static 'icons/8Frame.svg' %}" alt="icon">
@@ -594,7 +594,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="target-characteristics" role="tabpanel">
+                        <div class="tab-pane fade show" id="target-characteristics" role="tabpanel">
 
                         <!--Target Investment Characteristics-->
                             <div class="card key-card-01">
@@ -646,7 +646,167 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--How We Create Value-->
+                        <div class="tab-pane fade" id="how-we-create-value" role="tabpanel">
+
+                            <div class="card key-card-01">
+                                <div class="card-body">
+                                    <h3 class="key-card-01-title">Our value creation model is driven by:</h3>
+                                    <ul class="list-unstyled mt-5">
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Operational optimisation
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Technology enablement
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Strategic M&A and consolidation
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Centralisation of core functions
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Pricing and margin discipline
+                                            </p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--What We Avoid-->
+                        <div class="tab-pane fade" id="what-we-avoid" role="tabpanel">
+
+                            <div class="card key-card-01">
+                                <div class="card-body">
+                                    <h3 class="key-card-01-title">We do not invest in:</h3>
+                                    <ul class="list-unstyled mt-5">
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Passive minority positions without influence
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Businesses reliant on speculative growth assumptions
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Situations where value creation depends primarily on leverage or multiple expansion
+                                            </p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Our Edge-->
+                        <div class="tab-pane fade" id="our-edge" role="tabpanel">
+
+                            <div class="card key-card-01">
+                                <div class="card-body">
+                                    <h3 class="key-card-01-title d-none">Our value creation model is driven by:</h3>
+                                    <ul class="list-unstyled mt-5">
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Operator-first mindset with real execution capability
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Proven ability to integrate and scale acquired businesses
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Deep expertise in workforce, industrial, and services sectors
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Embedded AI and data-driven decision infrastructure
+                                            </p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inner-header" style="background-image: url('{% static 'images/1234.jpg' %}');"></section>
+
+    <section class="capital-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-5">
+                    <h3 class="section-title-1">
+                        Closing Philosophy
+                    </h3>
+                </div>
+                <div class="col-md-7">
+                    <p class="subtext-101">
+                        At PermaInvest, we believe that enduring value is created through control, operational excellence, and time, not financial engineering alone.
+                    </p>
+                    <p class="subtext-101 mt-3">
+                        We invest with a long-duration mindset, partnering with businesses where we can actively shape outcomes, compound cash flows,
+                        and build strategic platforms that scale.
+                    </p>
 
                 </div>
             </div>
