@@ -1,0 +1,656 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Investment Model - Permainvest{% endblock %}
+
+    {% block content %}
+
+    <section class="inner-header" style="background-image: url('{% static 'images/investment-model.png' %}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8">
+
+            <h1 class="hero-title">Investment Philosophy</h1>
+            <div class="gold-line mb-4"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section-one">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0" style="max-width: 37rem;">
+                        <h3 class="section-title-1">
+                            Our Core Belief
+                        </h3>
+                        <p class="section-subtext-1 mt-4 mb-5">
+                           At PermaInvest, we believe that enduring value is created through control, operational excellence, and time, not financial engineering alone.
+                            We invest with a long-duration mindset, partnering with businesses where we can actively shape outcomes, compound cash flows, and build
+                            strategic platforms that scale.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0" style="max-width: 37rem;">
+                        <h3 class="section-title-1 mb-5">
+                            Our Mandate
+                        </h3>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="custom-bullet me-3">
+                                <img src="{% static 'icons/Group12.png' %}">
+                            </div>
+                            <p class="section-subtext-1 m-0">
+                                Acquire controlling or highly influential stakes in resilient, cash-generative businesses
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="custom-bullet me-3">
+                                <img src="{% static 'icons/Group12.png' %}">
+                            </div>
+                            <p class="section-subtext-1 m-0">
+                                Focus on platform creation, not isolated transactions
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="custom-bullet me-3">
+                                <img src="{% static 'icons/Group12.png' %}">
+                            </div>
+                            <p class="section-subtext-1 m-0">
+                                Deploy capital with a permanent or long-hold orientation
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="custom-bullet me-3">
+                                <img src="{% static 'icons/Group12.png' %}">
+                            </div>
+                            <p class="section-subtext-1 m-0">
+                                Drive value through execution, technology, and integration
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-section-1">
+        <div class="container">
+            <h3 class="section-title-1 mb-5">Key Investment Pillars</h3>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">1</div>
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        <div class="accordion-title-text mb-2">Control & Influence</div>
+
+                        <span class="text-501 ">
+                              We prioritize majority ownership or strong governance rights to directly influence:
+                        </span>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text m-0">
+                                    Strategy
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3"><img src="{% static 'icons/Group12.png' %}"></div>
+                                <p class="qualification-text m-0">
+                                    Capital allocation
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3"><img src="{% static 'icons/Group12.png' %}"></div>
+                                <p class="qualification-text m-0">
+                                    Leadership decisions
+                                </p>
+                            </li>
+                        </ul>
+                          <p class="text-502">
+                              Minority investments are considered only where structural protections and influence are equivalent to control.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">2</div>
+
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample2">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Downside Protection First</div>
+
+                        <span class="text-501">
+                              Capital preservation underpins every decision:
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Acquire at disciplined valuations (often below intrinsic value)
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Structure transactions with asymmetric risk profiles
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Focus on cash flow visibility and resilience
+                                </p>
+                            </li>
+                        </ul>
+                          <p class="text-502">
+                              We do not rely on multiple expansion; we underwrite to cash yield and operational uplift.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">3</div>
+
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample3">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Platform-Led Growth</div>
+
+                        <span class="text-501">
+                              We build scaled operating platforms, not fragmented assets:
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Consolidate fragmented industries
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Integrate acquisitions into unified operating models
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Extract synergies across systems, procurement, and workforce
+                                </p>
+                            </li>
+                        </ul>
+                          <p class="text-502">
+                              Each investment must have clear adjacency pathways for expansion.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">4</div>
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample4">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Operator-Led Value Creation</div>
+
+                        <span class="text-501">
+                              We are not passive investors.
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Hands-on operational involvement
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Centralised support across finance, HR, compliance, and systems
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Deep sector execution capability
+                                </p>
+                            </li>
+                        </ul>
+                          <p class="text-502">
+                              We embed execution discipline at the core of value creation.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">5</div>
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample5">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Technology & AI Integration</div>
+
+                        <span class="text-501">
+                              We systematically deploy:
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Data infrastructure (e.g. Snowflake)
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Workflow automation and RPA
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Proprietary AI-driven decision tools
+                                </p>
+                            </li>
+                        </ul>
+                          <p class="text-502">
+                              Technology is not an overlay, it is a core driver of margin expansion, scalability, and defensibility.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">6</div>
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample6">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Long-Term Capital Orientation</div>
+
+                        <span class="text-501">
+                              We invest with no forced exit horizon:
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Hold assets if they continue to compound value
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Exit only when risk-reward dynamics change materially
+                                </p>
+                            </li>
+                            <p class="qualification-text">
+                                   This enables
+                            </p>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Better decision-making
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Stronger management alignment
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Sustainable long-term growth
+                                </p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">7</div>
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample7">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Disciplined Capital Allocation</div>
+
+                        <span class="text-501">
+                              We apply rigorous capital discipline:
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Prioritise high-return reinvestment opportunities
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Maintain balance sheet strength
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Avoid over-leverage and short-term optimisation
+                                </p>
+                            </li>
+
+                        </ul>
+                          <p class="text-502">
+                              Every dollar deployed must enhance long-term enterprise value per share.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-div d-flex align-items-start mb-5">
+                <div class="step-badge me-3 me-md-4 flex-shrink-0">8</div>
+                <div class="accordion flex-grow-1 custom-spaced-accordion" id="accordionExample8">
+                  <div class="accordion-item key-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button key-button collapsed pb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false">
+                        <div class="accordion-title-text mb-2">Alignment & Culture</div>
+
+                        <span class="text-501">
+                              We partner with:
+                        </span>
+                      </button>
+                    </h2>
+
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body px-0">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Founder-led or operator-driven businesses
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Management teams aligned on performance, accountability, and growth
+                                </p>
+                            </li>
+                            <p class="qualification-text">
+                                    We instill a culture of:
+                            </p>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Ownership
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    Transparency
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="custom-bullet me-3">
+                                    <img src="{% static 'icons/Group12.png' %}">
+                                </div>
+                                <p class="qualification-text">
+                                    High-performance execution
+                                </p>
+                            </li>
+
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="banner-section-1">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card section-101 h-100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-9">
+                                <h3>Let’s build what’s next.</h3>
+                                <p>Whether you’re exploring a sale, seeking growth capital, or looking for a long-term partner, we’d like to hear from you.</p>
+                                <a href="#" class="btn explore-btn-2">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card section-102 h-100" style="background-image: url('{% static 'images/102.jpg' %}');"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-section-1">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6" id="capital-tabs" role="tablist">
+
+                    <div class="card capital-card-1 active" data-bs-toggle="tab" data-bs-target="#target-characteristics" role="tab">
+                      <div class="card-body p-0 d-flex align-items-center">
+                        <div class="icon-circle-1 me-4">
+                          <img src="{% static 'icons/9Frame.svg' %}" alt="icon">
+                        </div>
+                        <div>
+                          <h5 class="capital-text">Target Investment Characteristics</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card capital-card-1">
+                      <div class="card-body p-0 d-flex align-items-center">
+                        <div class="icon-circle-1 me-4">
+                          <img src="{% static 'icons/6Frame.svg' %}" alt="icon">
+                        </div>
+                        <div>
+                          <h5 class="capital-text">How We Create Value</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card capital-card-1">
+                      <div class="card-body p-0 d-flex align-items-center">
+                        <div class="icon-circle-1 me-4">
+                          <img src="{% static 'icons/7Frame.svg' %}" alt="icon">
+                        </div>
+                        <div>
+                          <h5 class="capital-text">What We Avoid</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card capital-card-1">
+                      <div class="card-body p-0 d-flex align-items-center">
+                        <div class="icon-circle-1 me-4">
+                          <img src="{% static 'icons/8Frame.svg' %}" alt="icon">
+                        </div>
+                        <div>
+                          <h5 class="capital-text">Our Edge</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="target-characteristics" role="tabpanel">
+
+                        <!--Target Investment Characteristics-->
+                            <div class="card key-card-01">
+                                <div class="card-body">
+                                    <h3 class="key-card-01-title">We focus on businesses with:</h3>
+                                    <ul class="list-unstyled mt-5">
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Strong recurring or predictable cash flows
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Fragmented markets with consolidation potential
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Opportunities for operational uplift and margin expansion
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Clear pathways to scale through acquisition or organic growth
+                                            </p>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-4">
+                                            <div class="custom-bullet me-3">
+                                                <img src="{% static 'icons/Group12.png' %}">
+                                            </div>
+                                            <p class="qualification-text m-0">
+                                                Defensive characteristics in down cycles
+                                            </p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}

@@ -1,0 +1,848 @@
+* /* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+. {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    background: #FFF;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    /*padding: 1rem 0; */
+}
+
+.navbar.scrolled {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand img {
+    height: 5rem;      /* control logo size */
+    width: auto;       /* maintain aspect ratio */
+}
+
+.nav-link{
+    color: #3B3939;
+    font-family: Inter;
+    font-size: 1rem !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 2.125rem; /* 141.667% */
+    border-bottom: 2px solid rgba(189,144,47,0) !important;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #7B2802 !important;
+    font-size: 1rem !important;
+    border-bottom: 2px solid #BD902F !important;
+}
+
+.btn.contact-btn, .btn.contact-btn:hover{
+    border-radius: 0.75rem;
+    background: #7B2802;
+    padding: 0.75rem 1.875rem 0.75rem 1.9375rem;
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Style the Dropdown Menu */
+.dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1rem 0;
+}
+
+.dropdown-item {
+    color: #515253;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+/* Hover state for items - matching your brand gold or brown */
+.dropdown-item:hover {
+    background-color: #F6EFE5;
+    color: #7B2803;
+}
+
+/* Active state for the current page item */
+.dropdown-item.active {
+    background-color: #7B2803 !important;
+    color: #fff !important;
+}
+
+/* header */
+
+.hero-header {
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-color: #f4f1ea;
+    display: flex;
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #7B2802;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.gold-line {
+    width: 28.5rem;
+    height: 0.375rem;
+    border-radius: 0.75rem;
+    background: #BD902F;
+    margin-top: 2rem;
+    margin-bottom: 5.25rem;
+}
+
+/* Container for the dots */
+.carousel-indicators.custom-indicators {
+    justify-content: flex-start; /* Aligns dots to the left like your image */
+    margin-left: 0;
+}
+
+/* Base style for all dots */
+.carousel-indicators.custom-indicators [data-bs-target] {
+    width: 12px;           /* Size of the dot */
+    height: 12px;          /* Size of the dot */
+    border-radius: 50%;    /* Makes it round */
+    background-color: #D9D9D9; /* Light grey for inactive dots */
+    border: none;          /* Removes default Bootstrap border */
+    margin-right: 10px;    /* Spacing between dots */
+    opacity: 0.5;          /* Slight transparency for inactive */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* Active dot style */
+.carousel-indicators.custom-indicators .active {
+    background-color: #7B2802 !important; /* Your specific color */
+    opacity: 1 !important;                /* Fully visible when active */
+}
+
+.brown-section{
+    background: #7B2802;
+    padding: 8.2rem 0;
+}
+
+.brown-white-text{
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.3125rem; /* 132.5% */
+}
+
+.grey-section{
+    background: #F4F4F4;
+    padding: 8.2rem 0;
+}
+
+.section-title-1{
+    color: #7B2803;
+    font-family: "Helvetica Neue";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card.invest-model-card{
+    border-radius: 1.5rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding: 3rem;
+}
+
+.icon-circle {
+    width: 6rem;
+    height: 6rem;
+    background-color: #F6EFE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invest-model-title{
+    color: #7B2802;
+    font-family: "Helvetica Neue";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1875rem; /* 125% */
+}
+
+.icon-circle img{
+    height: 3rem; width: 3rem;
+}
+
+.gold-accent-line{
+    border-radius: 0.75rem;
+    background: #BD902F;
+    width: 20.5rem;
+    height: 0.1875rem;
+    margin: 1.25rem 0;
+}
+
+.invest-model-text{
+    color: #515253;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 160% */
+}
+
+.capital-section{
+    padding: 8.2rem 0;
+}
+
+.section-subtext-1{
+    color: #515253;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 145.455% */
+}
+
+/* --- Base Card Styles --- */
+.card.capital-card {
+    padding: 2rem 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    background-color: transparent; /* Ensures it blends with page background */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* --- Icon Circle & Image --- */
+.icon-circle-1 {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #EBE9E9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.icon-circle-1 img {
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: brightness(0) saturate(100%) !important;
+    transition: filter 0.3s ease;
+}
+
+.capital-text {
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: normal;
+    transition: color 0.3s ease;
+}
+
+.capital-subtext {
+    color: #515253;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+/* --- Hover States (Triggered by Card Hover) --- */
+
+/* 1. Change Border Color */
+.card.capital-card:hover {
+    border-bottom: 2px solid #BD902F;
+}
+
+/* 2. Change Circle Background */
+.card.capital-card:hover .icon-circle-1 {
+    background-color: #F6EFE5;
+}
+
+/* 3. Change Icon Image to Gold (#BD902F) */
+.card.capital-card:hover .icon-circle-1 img {
+    /* Converts Black base to #BD902F */
+    filter: invert(61%) sepia(52%) saturate(460%) hue-rotate(5deg) brightness(94%) contrast(92%) !important;
+}
+
+/* 4. Change Title Text to Brand Brown */
+.card.capital-card:hover .capital-text {
+    color: #7B2802;
+}
+
+
+.card.section-101{
+    padding: 8.2rem 0;
+    background: linear-gradient(0deg, #7B2803 0%, #7B2803 100%);
+    border-radius: 0;
+}
+
+.card.section-101 h3{
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.3125rem; /* 115.217% */
+}
+.card.section-101 p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+    max-width: 45rem;
+    margin-top: 1.38rem;
+    margin-bottom: 3.2rem;
+}
+
+
+.card.section-102{
+    border-radius: 0;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #f4f1ea;
+}
+
+.btn.explore-btn-2, .btn.explore-btn-2:hover, .btn.explore-btn-2.focus{
+    border-radius: 0.75rem;
+    background: #FFF;
+    padding: 1rem 1.9rem;
+    color: #7B2802;
+    font-family: "Helvetica Neue";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.125rem; /* 170% */
+}
+
+.our-team-home{
+    background: #EFEFEF;
+    padding: 8.2rem 0;
+}
+
+.our-team-scroll-text{
+    color: #7B2802;
+    font-family: "Helvetica Neue";
+    font-size: 3.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.our-team-scroll-text span{
+    color: #515253;
+}
+
+.btn.btn-type-3, .btn.btn-type-3:hover, .btn.btn-type-3.focus{
+    border-radius: 0.75rem;
+    background: #7B2802;
+    padding: 1rem 2rem;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.125rem; /* 170% */
+}
+
+/**Footer**/
+
+footer{
+    background: #E7E3E3;
+    padding: 6.25rem 0 3rem 0;
+}
+
+.contact-info p{
+    color: #262626;
+    font-family: "Inter";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 133.333% */
+}
+
+.footer-link{
+    color: rgba(38, 38, 38, 0.8);
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 133.333% */
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: rgba(38, 38, 38, 1);
+}
+
+.footer-heading{
+    color: #BE9030;
+    font-family: "Helvetica Neue";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem; /* 140% */
+}
+
+.footer-links a{
+    color: rgba(38,38,38,0.8);
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 133.333% */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover{
+    color: rgba(38,38,38,1);
+}
+
+.disclaimer-text{
+    color: #262626;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 133.333% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.btn.btn-linkedin {
+    background-color: #7B2802 !important; /* Rust brown */
+    color: #ffffff !important;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 1rem 2rem;
+}
+
+.btn.btn-linkedin:hover {
+    background-color: #5a1d01 !important;
+    transform: translateY(-2px);
+}
+
+.btn.btn-linkedin img {
+    height: 2rem; width: 2rem;
+}
+
+/**Our Firm**/
+
+.inner-header {
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-color: #f4f1ea;
+    display: flex;
+    position: relative;
+    height: 65vh;
+}
+
+.hero-subtitle{
+    color: #515253;
+    font-family: Inter;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.125rem; /* 130.769% */
+    max-width: 50rem;
+}
+
+.subtext-101{
+    color: #515253;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 145.455% */
+}
+
+.card.card-101{
+    border-radius: 1.5rem;
+    background: #F2E9DF;
+    padding: 2rem;
+}
+
+.subtext-102{
+    color: #515253;
+    font-family: "Helvetica Neue";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem; /* 150% */
+}
+
+.subtext-102 span{
+    color: #7B2803;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
+.team-section{
+    background: #F4F4F4;
+    padding: 8.2rem 0;
+}
+
+.img-fluid.team-member {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .img-fluid.team-member {
+        height: 25rem;
+    }
+}
+
+.team-name{
+    color: #7B2802;
+    font-family: "Helvetica Neue";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 111.111% */
+}
+
+.card.qualifications-card{
+    border-radius: 1.5rem;
+    border: 1px solid #7B2803;
+    padding: 3rem;
+    background: transparent;
+}
+
+.qualifications-title{
+    color: #7B2803;
+    font-family: "Helvetica Neue";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.qualification-text{
+    color: #515253;
+    font-family: "Helvetica Neue";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.38875rem */
+    max-width: 42rem;
+}
+
+.subtext-103{
+    color: #090909;
+    font-family: "Helvetica Neue";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.subtext-103 span{
+    color: #7B2803;
+}
+
+.team-social {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    border: 1px solid #515253;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.team-social img {
+    width: 1.5rem;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.team-social:hover {
+    background-color: #713515;
+    border-color: #713515;
+}
+
+.team-social:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.card.team-footer-card{
+    border-radius: 1.5rem;
+    background: #F2E9DF;
+    padding: 2.25rem;
+}
+
+.team-footer-card h3{
+    color: #202020;
+    font-family: "Helvetica Neue";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem;
+}
+
+.team-footer-card h3 span{
+    color: #7B2803;
+}
+
+.team-section-one{
+    background: #FFF;
+    padding: 8.2rem 0;
+}
+
+/* Custom 5-column grid for the first row */
+@media (min-width: 992px) {
+    .col-lg-5th {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px; /* Fixed height for vertical alignment */
+    padding: 1.5rem;
+}
+
+.logo-box img {
+    max-height: 80px; /* Limits size for consistency */
+    max-width: 100%;
+    height: auto;
+    /* Optional: maintain the grayscale look */
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.logo-box:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.key-section-1{
+    background: #F8F5F2;
+    padding: 8.2rem 0;
+}
+
+
+
+.step-badge {
+    width: 3rem;
+    height: 3rem;
+    background-color: #7B2802;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion-item.key-item{
+    background: transparent;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #D9D9D9 !important;
+    transition: border-color 0.3s ease;
+}
+
+.accordion-item.key-item:hover {
+    border-bottom-color: #BD902F !important;
+}
+
+.accordion-item.key-item:has(.accordion-button:not(.collapsed)) {
+    border-bottom-color: #BD902F !important;
+}
+
+.accordion-button.key-button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: block;
+}
+
+.accordion-title-text{
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion-button.key-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button.key-button:not(.collapsed){
+    background: transparent;
+    box-shadow: none !important;
+    color: #000;
+}
+
+.text-501{
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem; /* 145.455% */
+}
+
+.text-502{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.5%; /* 1.69813rem */
+}
+
+.accordion-button.key-button.collapsed .text-501 {
+    color: #515253;
+}
+
+/* 2. Color when NOT COLLAPSED (Open) */
+.accordion-button.key-button:not(.collapsed) .text-501 {
+    color: #7B2802;
+}
+
+.text-501 {
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Ensure the arrow container is visible */
+.accordion-button.key-button::after {
+    display: block !important;
+    content: "";
+    /* If the arrow disappeared because of d-block, we position it manually */
+    position: absolute;
+    right: 0;
+    top: 1.5rem; /* Adjust based on your title height */
+
+    /* Using a filter to turn the default SVG arrow to your brand color #7B2803 */
+    filter: invert(18%) sepia(87%) saturate(3040%) hue-rotate(357deg) brightness(88%) contrast(106%);
+}
+
+/* Ensure the button has relative positioning for the absolute arrow */
+.accordion-button.key-button {
+    position: relative;
+    padding-right: 3rem; /* Make space for the arrow so text doesn't overlap */
+}
+
+/* Optional: Rotate arrow when open (standard Bootstrap behavior) */
+.accordion-button.key-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+}
+
+.card.capital-card-1 {
+    padding: 2rem 0;
+    border: none;
+    border-radius: 0;
+   border-bottom: 2px solid #D9D9D9;
+    background-color: transparent; /* Ensures it blends with page background */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+/* 1. Change Border Color */
+.card.capital-card-1:hover {
+    border-bottom: 2px solid #BD902F;
+}
+
+/* 2. Change Circle Background */
+.card.capital-card-1:hover .icon-circle-1 {
+    background-color: #F6EFE5;
+}
+
+/* 3. Change Icon Image to Gold (#BD902F) */
+.card.capital-card-1:hover .icon-circle-1 img {
+    /* Converts Black base to #BD902F */
+    filter: invert(61%) sepia(52%) saturate(460%) hue-rotate(5deg) brightness(94%) contrast(92%) !important;
+}
+
+.card.key-card-01{
+    border-radius: 1.5rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding: 2.5rem;
+}
+
+.key-card-01-title{
+    color: #7B2803;
+    font-family: Inter;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 123.077% */
+}

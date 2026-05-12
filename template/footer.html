@@ -1,0 +1,46 @@
+{% load static %}
+
+<footer class="">
+    <div class="container">
+        <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6">
+                <a href="{% url 'app_perma:home' %}">
+                    <img src="{% static 'images/perma_footer.png' %}" alt="PermaInvest Logo" class="mb-4" style="height: 40px;">
+                </a>
+                <div class="contact-info">
+                    <p class="mb-1">Suite 1401, 56 Pitt Street</p>
+                    <p class="mb-4">Sydney NSW, 2000</p>
+
+                    <p class="mb-1">Email : <a href="mailto:info@permainvest.com.au" class="footer-link">info@permainvest.com.au</a></p>
+                    <p>ABN : 600 748 712</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h6 class="footer-heading mb-4">Quick Links</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Our Firm</a></li>
+                    <li  class="mt-2"><a href="#">Investment Approach</a></li>
+                    <li  class="mt-2"><a href="#">For Companies</a></li>
+                    <li  class="mt-2"><a href="#">Investment Philosophy</a></li>
+                    <li  class="mt-2"><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 d-flex align-items-start justify-content-lg-end">
+                <a href="https://linkedin.com" class="btn btn-linkedin">
+                    <img src="{% static 'icons/linkedinIcon.svg' %}"> Connect With Us
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 pt-4 border-top-custom">
+            <div class="col-12">
+                <p class="disclaimer-text mb-1">PermaInvest, a division of Perma Funds Management Pty Ltd</p>
+                <p class="disclaimer-text">Holder of CAR 462128 from Perpetuity Capital Pty Ltd AFSL 405364</p>
+            </div>
+        </div>
+    </div>
+</footer>

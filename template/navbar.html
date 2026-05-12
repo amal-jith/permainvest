@@ -1,0 +1,77 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg fixed-top transition-nav" id="mainNavbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="{% url 'app_perma:home' %}">
+        <img src="{% static 'images/perma_invest.png' %}" alt="Logo" class="img-fluid">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Center Links -->
+      <ul class="navbar-nav mx-auto" style="gap: 8px;">
+        <li class="nav-item">
+          <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'app_perma:home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.resolver_match.url_name == 'our_firm' %}active{% endif %}" href="{% url 'app_perma:our_firm' %}">Our Firm</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if request.resolver_match.url_name in 'investment_model,investment_values,ethical_investing,tech_innovation' %}active{% endif %}"
+             href="{% url 'app_perma:investment_model' %}" id="investmentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Investment Model
+          </a>
+
+          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="investmentDropdown">
+            <li>
+                <a class="dropdown-item {% if request.resolver_match.url_name == 'investment_model' %}active{% endif %}"
+                   href="{% url 'app_perma:investment_model' %}">Investment Model</a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="#">Investment Values</a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="#">Ethical Investing</a>
+            </li>
+            <li>
+                <a class="dropdown-item "
+                   href="#">Technology and Innovation Commitment</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">For Business Owners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">For Investors</a>
+        </li>
+      </ul>
+
+      <!-- Right Button -->
+      <div class="d-flex">
+        <a href="#" class="btn contact-btn">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
