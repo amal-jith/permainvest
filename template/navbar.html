@@ -39,16 +39,16 @@
                    href="{% url 'app_perma:investment_model' %}">Investment Model</a>
             </li>
             <li>
-                <a class="dropdown-item "
-                   href="#">Investment Values</a>
+                <a class="dropdown-item {% if request.resolver_match.url_name == 'investment_values' %}active{% endif %}"
+                   href="{% url 'app_perma:investment_values' %}">Investment Values</a>
             </li>
             <li>
-                <a class="dropdown-item "
-                   href="#">Ethical Investing</a>
+                <a class="dropdown-item {% if request.resolver_match.url_name == 'ethical_investing' %}active{% endif %}"
+                   href="{% url 'app_perma:ethical_investing' %}">Ethical Investing</a>
             </li>
             <li>
-                <a class="dropdown-item "
-                   href="#">Technology and Innovation Commitment</a>
+                <a class="dropdown-item {% if request.resolver_match.url_name == 'technology_innovation' %}active{% endif %}"
+                   href="{% url 'app_perma:technology_innovation' %}">Technology and Innovation Commitment</a>
             </li>
           </ul>
         </li>
